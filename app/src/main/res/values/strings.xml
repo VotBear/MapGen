@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MapGen</string>
+    <string name="init_threshold">Initial threshold: 0.%d</string>
+    <string name="neighbor_land">Req. neighbors (Land): %d</string>
+    <string name="neighbor_water">Req. neighbors (Water): %d</string>
+    <string name="iteration">Iteration: %d</string>
+</resources>

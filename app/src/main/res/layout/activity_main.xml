@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="W:" />
+
+                <EditText
+                    android:id="@+id/et_w"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="H:" />
+
+                <EditText
+                    android:id="@+id/et_h"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_init_threshold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Initial threshold:" />
+
+            <SeekBar
+                android:id="@+id/seekbar_threshold"
+                style="@style/Widget.AppCompat.SeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:min="0" />
+
+            <TextView
+                android:id="@+id/tv_neigh_land"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <SeekBar
+                android:id="@+id/seekbar_neigh_land"
+                style="@style/Widget.AppCompat.SeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="8"
+                android:min="1" />
+
+            <TextView
+                android:id="@+id/tv_neigh_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <SeekBar
+                android:id="@+id/seekbar_neigh_water"
+                style="@style/Widget.AppCompat.SeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="8"
+                android:min="1" />
+
+            <Button
+                android:id="@+id/btn_genca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Generate Cellular Automata" />
+
+            <TextView
+                android:id="@+id/tv_iter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/seekbar_caiter"
+                style="@style/Widget.AppCompat.SeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/iv_map"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:src="@drawable/ic_launcher_background"
+        android:background="@android:color/darker_gray"/>
+
+</LinearLayout>
